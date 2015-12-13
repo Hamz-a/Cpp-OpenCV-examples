@@ -1,0 +1,1 @@
+Count the number of pips in a dice.
