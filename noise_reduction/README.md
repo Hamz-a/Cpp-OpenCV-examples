@@ -1,0 +1,1 @@
+Reduce noise from grayscale images.
