@@ -1,21 +1,19 @@
 #include <opencv2/opencv.hpp>
 
-using namespace cv;
-
 int main(int, char**)
 {
-    // open the default camera
-    VideoCapture cap(0);
-    
-    // check if we succeeded
+    // Open default camera
+    cv::VideoCapture cap(0);
+
+    // Camera working?
     if(!cap.isOpened()) {
         std::cout << "Fix your camera!" << std::endl;
         return -1;
     }
 
-    Mat frame;
-    namedWindow("video", WINDOW_AUTOSIZE);
-    
+    cv::Mat frame;
+    cv::namedWindow("video", cv::WINDOW_AUTOSIZE);
+
     while(1)
     {
         // Get a new frame from camera
@@ -23,9 +21,9 @@ int main(int, char**)
 
         // Show the frame
         imshow("video", frame);
-        
+
         // Exit
-        if(waitKey(30) >= 0) break;
+        if(cv::waitKey(30) >= 0) break;
     }
 
     return 0;
