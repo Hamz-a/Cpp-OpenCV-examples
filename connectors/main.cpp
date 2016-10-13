@@ -51,7 +51,7 @@ int main(int argc, char** argv)
 	}
 
     // Some fancy display
-	namedWindow("Connector - original", WINDOW_AUTOSIZE)
+	namedWindow("Connector - original", WINDOW_AUTOSIZE);
 	imshow("Connector - original", image);
 
 	namedWindow("Connector - Sobel", WINDOW_AUTOSIZE);
