@@ -1,0 +1,1 @@
+Open default camera and read images.
